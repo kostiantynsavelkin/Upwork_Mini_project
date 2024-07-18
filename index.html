@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "app": "./app.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="maintenance-overlay" class="maintenance-overlay d-none">
+    <div class="maintenance-message">
+      <h1>Site Under Maintenance</h1>
+      <p>Please check back later.</p>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h1 class="text-center">Todo App</h1>
+    <div class="input-group mb-3">
+      <input type="text" id="todo-input" class="form-control" placeholder="Add a new todo">
+      <div class="input-group-append">
+        <button class="btn btn-primary" id="add-todo-btn">Add</button>
+      </div>
+    </div>
+    <ul class="list-group" id="todo-list"></ul>
+  </div>
+  <script type="module">
+    import "app";
+  </script>
+</body>
+</html>
