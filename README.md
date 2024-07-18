@@ -19,6 +19,12 @@ style.css
 
 ## Setup and Run
 
+1. npm install -g http-server
+
+2. http-server
+
+3. Open http://127.0.0.1:8080 on your browser
+
 ### Prerequisites
 
 - A web server to serve the files (e.g., [http-server](https://www.npmjs.com/package/http-server))
@@ -31,8 +37,3 @@ style.css
    git clone https://github.com/kostiantynsavelkin/Upwork_Mini_project
    cd todo-app
 
-2. npm install -g http-server
-
-3. http-server
-
-4. Open http://127.0.0.1:8080 on your browser
